@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Soda ERP</h1>
+        <p class="lead">Please choose an option to proceed:</p>
+        <div class="mt-4">
+            <a href="{% url 'signup' %}" class="btn btn-primary btn-lg mx-2">Sign Up</a>
+            <a href="{% url 'login' %}" class="btn btn-secondary btn-lg mx-2">Log In</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
