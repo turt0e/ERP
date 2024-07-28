@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Dashboard</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Accounts</h5>
+                    <p class="card-text">Manage user accounts.</p>
+                    <a href="{% url 'view_profile' %}" class="btn btn-primary">Go to Accounts</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">CRM</h5>
+                    <p class="card-text">Manage customer relationships.</p>
+                    <a href="{% url 'crm:index' %}" class="btn btn-primary">Go to CRM</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Sales</h5>
+                    <p class="card-text">Manage sales operations.</p>
+                    <a href="{% url 'sales:index' %}" class="btn btn-primary">Go to Sales</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Invoices</h5>
+                    <p class="card-text">Manage invoices.</p>
+                    <a href="{% url 'invoices:index' %}" class="btn btn-primary">Go to Invoices</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Expenses</h5>
+                    <p class="card-text">Manage expenses.</p>
+                    <a href="{% url 'expenses:index' %}" class="btn btn-primary">Go to Expenses</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Products</h5>
+                    <p class="card-text">Manage products.</p>
+                    <a href="{% url 'products:index' %}" class="btn btn-primary">Go to Products</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Stocks</h5>
+                    <p class="card-text">Manage stock levels.</p>
+                    <a href="{% url 'stocks:index' %}" class="btn btn-primary">Go to Stocks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

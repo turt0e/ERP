@@ -5,7 +5,6 @@ from django.contrib import messages
 from .forms import SignUp, ProfileForm
 from .models import Profile
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth.views import LogoutView
 
 def signup(request):
     if request.method == 'POST':
@@ -18,7 +17,7 @@ def signup(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                return redirect('dashboard')  # Redirect to dashboard after signup
     else:
         form = SignUp()
     return render(request, 'accounts/signup.html', {'form': form})
@@ -32,7 +31,7 @@ def user_login(request):
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                return redirect('dashboard:index')  # Correct name here
             else:
                 messages.error(request, 'Invalid username or password.')
         else:
@@ -53,12 +52,7 @@ def edit_profile(request):
         form = ProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            return redirect('view_profile')
+            return redirect('profile')
     else:
         form = ProfileForm(instance=profile)
     return render(request, 'accounts/edit_profile.html', {'form': form})
-
-
-@login_required
-def home(request):
-    return render(request, 'home.html')

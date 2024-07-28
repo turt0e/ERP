@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'products',
     'stocks',
     'rest_framework',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
@@ -131,8 +132,8 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
 
 LOGIN_URL = 'accounts/login'
-LOGOUT_URL = 'home'
-LOGIN_REDIRECT_URL = 'profile'
+LOGIN_REDIRECT_URL = 'dashboard:index'
+LOGOUT_REDIRECT_URL = 'home'
 
 
 # Default primary key field type
