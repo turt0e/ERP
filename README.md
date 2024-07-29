@@ -31,7 +31,7 @@ To develop and deploy a comprehensive Python-based ERP system tailored for whole
 4. Activate the virtual environment:
     - On Windows:
         ```bash
-        venv\Scripts\activate
+        venv/Scripts/activate
         ```
     - On macOS/Linux:
         ```bash
