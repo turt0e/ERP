@@ -20,18 +20,18 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from . import views
-
 urlpatterns = [
+    path('', views.redirect_to_signup, name='redirect_to_signup'),
+    path('', include('user_authorization.urls')),
+    path('dashboard/', include('dashboard.urls')),
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('accounts/', include('accounts.urls')),
-    path('', include('dashboard.urls')),
-    path('crm/', include('crm.urls')),
-   # path('sales/', include('sales.urls')),
-   # path('expenses/', include('expenses.urls')),
-   # path('products/', include('products.urls')),
-   # path('invoices/', include('invoices.urls')),
-   # path('stocks/', include('stocks.urls')),
+    # path('accounts/', include('accounts.urls')),
+    # path('crm/', include('crm.urls')),
+    # path('expenses/', include('expenses.urls')),
+    # path('invoices/', include('invoices.urls')),
+    # path('products/', include('products.urls')),
+    # path('sales/', include('sales.urls')),
+    # path('stocks/', include('stocks.urls')),
 ]
 
 if settings.DEBUG:

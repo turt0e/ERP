@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect
 
-def home(request):
-    return render(request, 'home.html')
+def redirect_to_signup(request):
+    return redirect('user_authorization:signup')

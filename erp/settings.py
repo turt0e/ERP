@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user_authorization',
     'accounts',
     'crm',
     'sales',
@@ -59,11 +60,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'erp.urls'
-
+import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,6 +76,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'erp.wsgi.application'
 
@@ -130,10 +132,6 @@ STATICFILES_DIRS = [BASE_DIR / "static_my_project"]
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
-
-LOGIN_URL = 'accounts/login'
-LOGIN_REDIRECT_URL = 'dashboard:index'
-LOGOUT_REDIRECT_URL = 'home'
 
 
 # Default primary key field type
