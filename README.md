@@ -75,3 +75,5 @@ To develop and deploy a comprehensive Python-based ERP system tailored for whole
     git push ERP feature-name
     ```
 6. Open a pull request.
+
+### Naayos napo yung dashboard before deadline pero di po nasama sa progress report pdf.
