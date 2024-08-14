@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGMA</title>
+</head>
+<body>
+{{ form.errors }}
+<form method="post">
+    {% csrf_token %}
+    {% for foo in form %}
+        {{ foo.label }}
+        {{ foo }}
+    {% endfor %}
+    <button type="submit">SKIBIDI</button>
+</form>
+</body>
+</html>

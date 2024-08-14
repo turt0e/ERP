@@ -22,11 +22,11 @@ from django.conf.urls.static import static
 from . import views
 urlpatterns = [
     path('', views.index, name='index'),
-    path('', views.redirect_to_signup, name='redirect_to_signup'),
+    #path('', views.redirect_to_signup, name='redirect_to_signup'),
     path('', include('user_authorization.urls')),
     #path('dashboard/', include('dashboard.urls')),
     path('admin/', admin.site.urls),
-    # path('accounts/', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
     # path('crm/', include('crm.urls')),
     # path('expenses/', include('expenses.urls')),
     # path('invoices/', include('invoices.urls')),
