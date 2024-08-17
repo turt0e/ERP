@@ -33,6 +33,7 @@ urlpatterns = [
     # path('products/', include('products.urls')),
     # path('sales/', include('sales.urls')),
     # path('stocks/', include('stocks.urls')),
+    path('contact/', views.contact_page, name='contact_page'),
 ]
 
 if settings.DEBUG:
