@@ -21,14 +21,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from . import views
 urlpatterns = [
-    path('', views.index, name='index'),
-    #path('', views.redirect_to_signup, name='redirect_to_signup'),
-    path('', include('user_authorization.urls')),
-    #path('dashboard/', include('dashboard.urls')),
+    path('', include('dashboard.urls')),
     path('admin/', admin.site.urls),
-    path('accounts/', include('accounts.urls')),
-    # path('crm/', include('crm.urls')),
-    # path('expenses/', include('expenses.urls')),
+   # path('accounts/', include('accounts.urls')),
+   #  path('expenses/', include('expenses.urls')),
     # path('invoices/', include('invoices.urls')),
     # path('products/', include('products.urls')),
     # path('sales/', include('sales.urls')),
@@ -38,4 +34,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

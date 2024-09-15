@@ -1,9 +1,6 @@
 from django.shortcuts import render
 from .forms import ContactForm
 
-def index(request):
-    return render(request, 'index.html')
-
 def contact_page(request):
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)
@@ -17,3 +14,5 @@ def contact_page(request):
         'form': contact_form
     }
     return render(request, 'contact/contact.html', context)
+
+
