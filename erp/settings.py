@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'sales',
     'invoices',
     'expenses',
-    'products',
     'stocks',
     'dashboard',
     'rest_framework',

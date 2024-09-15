@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd9a4113-f8f3-43ba-892d-f85da271b324" name="Changes" comment="uh">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expenses/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/expenses/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" />
-    </list>
+    <list default="true" id="dd9a4113-f8f3-43ba-892d-f85da271b324" name="Changes" comment="uh" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +159,7 @@
       <workItem from="1725699630889" duration="3019000" />
       <workItem from="1725877183429" duration="759000" />
       <workItem from="1725978583603" duration="5867000" />
-      <workItem from="1726377758788" duration="16836000" />
+      <workItem from="1726377758788" duration="17145000" />
     </task>
     <servers />
   </component>
