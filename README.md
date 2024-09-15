@@ -13,7 +13,6 @@ To develop and deploy a comprehensive Python-based ERP system tailored for whole
 - **Expense Management**: Record and manage business expenses.
 - **Sales Invoice**: Generate and manage sales invoices.
 - **Credit Memory**: Track credit transactions.
-- **CRM System**: Manage customer relationships and interactions.
 
 ### Installation
 1. Clone the repository:
@@ -76,4 +75,4 @@ To develop and deploy a comprehensive Python-based ERP system tailored for whole
     ```
 6. Open a pull request.
 
-### Naayos napo yung dashboard before deadline pero di po nasama sa progress report pdf.
+### Non working Contact page, A working Add/Edit/Delete Product function in the dashboard, some auth forms and expense models
